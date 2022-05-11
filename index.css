@@ -55,7 +55,7 @@
 
   .slide-controller>a{
     display: flex;
-    
+
     border-radius: 20%;
     border: 2px solid white;
     height: 10px;
@@ -64,10 +64,4 @@
     
   }
 
-  /* .container2>.slide-controller>a:hover{
-    color: white;
-  } */
-
-  /* .slide-controller>a.active{
-    background-color: white;
-  } */
+  
