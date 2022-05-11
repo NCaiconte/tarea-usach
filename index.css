@@ -1,7 +1,114 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-   
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.section-title {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  color: #1f3549;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20%;
+  height: 3px;
+  background: #1f1a1c;
+  bottom: 0;
+  margin-left: 40%;
   
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+.services .icon-box {
+  padding: 20px 15px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1;
+  
+}
+.services .icon-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: ease-in-out 0.3s;
+  z-index: -1;
+}
+.services .icon-box:hover::before {
+  background: #887dcf;
+  height: 100%;
+  border-radius: 0px;
+}
+.services .icon {
+  margin: 0 auto 30px auto;
+  padding-top: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #262b4f;
+  transition: all 0.3s ease-in-out;
+}
+.services .icon i {
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+}
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.services .title a {
+  color: #111;
+}
+.services .description {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+.services .icon-box:hover .title a, .services .icon-box:hover .description {
+  color: #fff;
+}
+.services .icon-box:hover .icon {
+  background: #fff;
+}
+.services .icon-box:hover .icon i {
+  color: #472b72;
+}
+@media (max-width: 768px) {
+  .services .icon-box::before {
+    bottom: 60%;
+  }
+}
+
+#footer {
+  background: #fff;
+  padding: 24px 0;
+  font-size: 14px;
+  box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.12);
+}
+#footer .copyright {
+  text-align: center;
+}
