@@ -4,6 +4,71 @@
   margin: 0;
 }
 
+.menu {
+  display: flex;
+  min-height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #F1F1E6;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 100px;
+}
+
+.container nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+ 
+}
+
+nav a{
+  display: inline;
+  justify-content: space-between;
+  position: relative;
+  right: 100px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 20px;
+  padding: 0 10px 0 10px;
+
+}
+
+nav a:after{
+  content: "";
+  position: absolute;
+  background-color: rgb(136, 125, 207);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+nav a:hover:after{
+  width: 100%;
+}
+
+@media (max-width:720px){
+  .menu{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+  .logo{
+    justify-content: center;
+  }
+}
 .section-title {
   padding-bottom: 30px;
   text-align: center;
